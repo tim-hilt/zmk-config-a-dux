@@ -40,6 +40,16 @@
 #define KEYS_R RT0 RT1 RT2 RT3 RT4 RM0 RM1 RM2 RM3 RM4 RB0 RB1 RB2 RB3 RB4
 #define THUMBS LH1 LH0 RH0 RH1         // Thumbs on 34 keys.
 
+#define ZMK_BEHAVIOR(name, type, ...) \
+    / { \
+        behaviors { \
+            name: name { \
+                ZMK_BEHAVIOR_CORE_ ## type; \
+                __VA_ARGS__ \
+            }; \
+        }; \
+    };
+
 #define ZMK_HOLD_TAP(name, ...) ZMK_BEHAVIOR(name, hold_tap, __VA_ARGS__)
 
 #define MAKE_HRM(NAME, HOLD, TAP, TRIGGER_POS)                                 \
