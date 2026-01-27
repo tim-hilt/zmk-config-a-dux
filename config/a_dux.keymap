@@ -50,6 +50,8 @@
         }; \
     };
 
+#define ZMK_BEHAVIOR_CORE_hold_tap        compatible = "zmk,behavior-hold-tap";        #binding-cells = <2>
+
 #define ZMK_HOLD_TAP(name, ...) ZMK_BEHAVIOR(name, hold_tap, __VA_ARGS__)
 
 #define QUICK_TAP_MS 175
