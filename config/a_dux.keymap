@@ -66,19 +66,19 @@
 
         base_layer {
             bindings = <
-                &kp W        &kp L        &kp Y         &kp P         &kp B         &kp Z         &kp F         &kp O        &kp U         &sqt_spc
+                &kp W        &kp L        &kp Y         &kp P         &kp B         &kp Z         &kp F         &kp O         &kp U        &sqt_spc
                 &hml LGUI C  &hml LALT R  &hml LSHFT S  &hml LCTRL T  &kp G         &kp M         &hmr LCTRL N  &hmr LSHFT E  &hmr LALT I  &hmr LGUI A
-                &kp Q        &kp J        &kp V         &kp D         &kp K         &kp X         &kp H         &kp COMMA    &kp DOT       &kp SLASH
+                &kp Q        &kp J        &kp V         &kp D         &kp K         &kp X         &kp H         &kp COMMA     &kp DOT      &kp SLASH
                                                         &lt 3 TAB     &kp SPACE     &lt 1 BSPC    &lt 2 ENTER
             >;
         };
 
         symbol_layer {
             bindings = <
-                &kp EXCL   &kp AMPS   &kp LBRC  &kp RBRC   &caret_spc    &kp PIPE    &kp N7   &kp N8  &kp N9  &kp STAR
+                &kp EXCL   &kp AMPS   &kp LBRC  &kp RBRC   &caret_spc    &kp BSLH    &kp N7   &kp N8  &kp N9  &kp STAR
                 &kp EQUAL  &kp DLLR   &kp LPAR  &kp RPAR   &tilde_spc    &grave_spc  &kp N4   &kp N5  &kp N6  &kp PLUS
-                &kp AT     &kp PRCNT  &kp LBKT  &kp RBKT   &kp HASH      &kp N0      &kp N1   &kp N2  &kp N3  &kp BSLH
-                                                &kp MINUS  &kp SEMI      &none       &kp DEL
+                &kp AT     &kp PRCNT  &kp LBKT  &kp RBKT   &kp HASH      &kp N0      &kp N1   &kp N2  &kp N3  &kp SEMI
+                                                &kp MINUS  &kp ESC       &none       &kp DEL
             >;
         };
 
