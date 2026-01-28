@@ -78,25 +78,25 @@
                 &kp EXCL   &kp AMPS   &kp LBRC  &kp RBRC   &caret_spc    &kp PIPE    &kp N7   &kp N8  &kp N9  &kp STAR
                 &kp EQUAL  &kp DLLR   &kp LPAR  &kp RPAR   &tilde_spc    &grave_spc  &kp N4   &kp N5  &kp N6  &kp PLUS
                 &kp AT     &kp PRCNT  &kp LBKT  &kp RBKT   &kp HASH      &kp N0      &kp N1   &kp N2  &kp N3  &kp BSLH
-                                                &kp MINUS  &kp SEMI      &kp none    &kp DEL
+                                                &kp MINUS  &kp SEMI      &none    &kp DEL
             >;
         };
 
         umlaut_layer {
             bindings = <
-                &kp none  &kp none  &kp none  &kp none  &kp none    &kp none  &kp none  &kp RA(P)  &kp RA(Y)  &kp none
-                &kp none  &kp none  &kp RA(S) &kp none  &kp none    &kp none  &kp none  &kp RA(5)  &kp none   &kp RA(Q)
-                &kp none  &kp none  &kp none  &kp none  &kp none    &kp none  &kp none  &kp none   &kp none   &kp none
-                                              &kp none  &kp none    &kp none  &kp none
+                &none  &none  &none  &none  &none    &none  &none  &kp RA(P)  &kp RA(Y)  &none
+                &none  &none  &kp RA(S) &none  &none    &none  &none  &kp RA(5)  &none   &kp RA(Q)
+                &none  &none  &none  &none  &none    &none  &none  &none   &none   &none
+                                              &none  &none    &none  &none
             >;
         };
 
         nav_layer {
             bindings = <
-                &kp none  &kp none  &kp none  &kp none  &kp none    &kp none  &kp LG(LEFT)  &kp LG(DOWN)   &kp LG(UP) &kp LG(RIGHT)
-                &kp none  &kp none  &kp none  &kp none  &kp none    &kp none  &kp LEFT      &kp DOWN       &kp UP     &kp RIGHT
-                &kp none  &kp none  &kp none  &kp none  &kp none    &kp none  &kp HOME      &kp none       &kp none   &kp END
-                                              &kp none  &kp none    &kp C_PP  &kp none
+                &none  &none  &none  &none  &none    &none  &kp LG(LEFT)  &kp LG(DOWN)   &kp LG(UP) &kp LG(RIGHT)
+                &none  &none  &none  &none  &none    &none  &kp LEFT      &kp DOWN       &kp UP     &kp RIGHT
+                &none  &none  &none  &none  &none    &none  &kp HOME      &none       &none   &kp END
+                                              &none  &none    &kp C_PP  &none
             >;
         };
 
