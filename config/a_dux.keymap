@@ -36,73 +36,28 @@
     
 &lt { flavor = "hold-preferred"; };
 
-#define LT0  4  // left-top row
-#define LT1  3
-#define LT2  2
-#define LT3  1
-#define LT4  0
-
-#define RT0  5  // right-top row
-#define RT1  6
-#define RT2  7
-#define RT3  8
-#define RT4  9
-
-#define LM0 14  // left-middle row
-#define LM1 13
-#define LM2 12
-#define LM3 11
-#define LM4 10
-
-#define RM0 15  // right-middle row
-#define RM1 16
-#define RM2 17
-#define RM3 18
-#define RM4 19
-
-#define LB0 24  // left-bottom row
-#define LB1 23
-#define LB2 22
-#define LB3 21
-#define LB4 20
-
-#define RB0 25  // right-bottom row
-#define RB1 26
-#define RB2 27
-#define RB3 28
-#define RB4 29
-
-#define LH0 31  // left thumb keys
-#define LH1 30
-
-#define ZMK_BEHAVIOR(name, type, ...) \
-    / { \
-        behaviors { \
-            name: name { \
-                ZMK_BEHAVIOR_CORE_ ## type; \
-                __VA_ARGS__ \
-            }; \
-        }; \
+    / {
+        behaviors {
+            name: hml {
+                compatible = "zmk,behavior-hold-tap";        #binding-cells = <2>;
+                bindings = <&kp>, <&kp>; flavor = "balanced";
+               tapping-term-ms = <280>; quick-tap-ms = <175>;
+               require-prior-idle-ms = <150>; hold-trigger-on-release;
+               hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 25 26 27 28 29 30 31 32 33>;
+            };
+        };
     };
-
-#define ZMK_BEHAVIOR_CORE_hold_tap        compatible = "zmk,behavior-hold-tap";        #binding-cells = <2>
-
-#define ZMK_HOLD_TAP(name, ...) ZMK_BEHAVIOR(name, hold_tap, __VA_ARGS__)
-
-#define KEYS_L LT0 LT1 LT2 LT3 LT4 LM0 LM1 LM2 LM3 LM4 LB0 LB1 LB2 LB3 LB4
-#define KEYS_R RT0 RT1 RT2 RT3 RT4 RM0 RM1 RM2 RM3 RM4 RB0 RB1 RB2 RB3 RB4
-#define THUMBS LH1 LH0 RH0 RH1
-
-#define QUICK_TAP_MS 175
-
-#define MAKE_HRM(NAME, HOLD, TAP, TRIGGER_POS)                                 \
-  ZMK_HOLD_TAP(NAME, bindings = <HOLD>, <TAP>; flavor = "balanced";            \
-               tapping-term-ms = <280>; quick-tap-ms = <QUICK_TAP_MS>;         \
-               require-prior-idle-ms = <150>; hold-trigger-on-release;         \
-               hold-trigger-key-positions = <TRIGGER_POS>;)
-
-MAKE_HRM(hml, &kp, &kp, KEYS_R THUMBS) // Left-hand HRMs.
-MAKE_HRM(hmr, &kp, &kp, KEYS_L THUMBS) // Right-hand HRMs.
+    / {
+        behaviors {
+            name: hmr {
+                compatible = "zmk,behavior-hold-tap";        #binding-cells = <2>;
+                bindings = <&kp>, <&kp>; flavor = "balanced";
+               tapping-term-ms = <280>; quick-tap-ms = <175>;
+               require-prior-idle-ms = <150>; hold-trigger-on-release;
+               hold-trigger-key-positions = <4 3 2 1 0 14 13 12 11 10 24 23 22 21 20 31 30 32 33>;
+            };
+        };
+    };
 
 / {
 
