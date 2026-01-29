@@ -67,7 +67,7 @@
         base_layer {
             bindings = <
                 &kp W        &kp L        &kp Y         &kp P         &kp B         &kp Z         &kp F         &kp O         &kp U        &sqt_spc
-                &hml LGUI C  &hml LALT R  &hml LSHFT S  &hml LCTRL T  &kp G         &kp M         &hmr LCTRL N  &hmr LSHFT E  &hmr LALT I  &hmr LGUI A
+                &hml LGUI C  &hml LALT R  &hml LCTRL S  &hml LSHFT T  &kp G         &kp M         &hmr LSHFT N  &hmr LCTRL E  &hmr LALT I  &hmr LGUI A
                 &kp Q        &kp J        &kp V         &kp D         &kp K         &kp X         &kp H         &kp COMMA     &kp DOT      &kp SLASH
                                                         &lt 3 TAB     &kp SPACE     &lt 1 BSPC    &lt 2 ENTER
             >;
@@ -93,10 +93,10 @@
 
         nav_layer {
             bindings = <
-                &none  &none  &none  &none  &none    &none     &kp LG(LEFT)  &kp LG(DOWN)   &kp LG(UP) &kp LG(RIGHT)
-                &none  &none  &none  &none  &none    &none     &kp LEFT      &kp DOWN       &kp UP     &kp RIGHT
-                &none  &none  &none  &none  &none    &none     &kp HOME      &none          &none      &kp END
-                                     &none  &none    &kp C_PP  &none
+                &none         &none         &none  &none  &none    &none     &kp LG(LEFT)  &kp LG(DOWN)   &kp LG(UP) &kp LG(RIGHT)
+                &none         &none         &none  &none  &none    &none     &kp LEFT      &kp DOWN       &kp UP     &kp RIGHT
+                &bt BT_SEL 0  &bt BT_SEL 1  &none  &none  &none    &none     &kp HOME      &none          &none      &kp END
+                                                   &none  &none    &kp C_PP  &none
             >;
         };
 
