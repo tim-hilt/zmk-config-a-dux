@@ -42,7 +42,7 @@
         #binding-cells = <0>;
         wait-ms = <0>;
         tap-ms = <0>;
-        bindings = <&kp DQT &kp a>;
+        bindings = <&kp DQT &kp A>;
       };
       oe: oe {
         label = "ZM_oe";
@@ -50,7 +50,7 @@
         #binding-cells = <0>;
         wait-ms = <0>;
         tap-ms = <0>;
-        bindings = <&kp DQT &kp o>;
+        bindings = <&kp DQT &kp O>;
       };
       ue: ue {
         label = "ZM_ue";
@@ -58,7 +58,7 @@
         #binding-cells = <0>;
         wait-ms = <0>;
         tap-ms = <0>;
-        bindings = <&kp DQT &kp u>;
+        bindings = <&kp DQT &kp U>;
       };
     };
 };
