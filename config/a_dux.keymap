@@ -43,7 +43,7 @@
         wait-ms = <0>;
         tap-ms = <0>;
         bindings = <&kp DQT &kp a>;
-      }
+      };
       oe: oe {
         label = "ZM_oe";
         compatible = "zmk,behavior-macro";
@@ -51,7 +51,7 @@
         wait-ms = <0>;
         tap-ms = <0>;
         bindings = <&kp DQT &kp o>;
-      }
+      };
       ue: ue {
         label = "ZM_ue";
         compatible = "zmk,behavior-macro";
@@ -59,7 +59,7 @@
         wait-ms = <0>;
         tap-ms = <0>;
         bindings = <&kp DQT &kp u>;
-      }
+      };
     };
 };
     
