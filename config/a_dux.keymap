@@ -8,30 +8,58 @@
         label = "ZM_sqt_spc";
         compatible = "zmk,behavior-macro";
         #binding-cells = <0>;
-        tap-ms = <30>;
+        wait-ms = <0>;
+        tap-ms = <0>;
         bindings = <&kp SQT &kp SPACE>;
       };
       grave_spc: grave_spc {
         label = "ZM_grave_spc";
         compatible = "zmk,behavior-macro";
         #binding-cells = <0>;
-        tap-ms = <30>;
+        wait-ms = <0>;
+        tap-ms = <0>;
         bindings = <&kp GRAVE &kp SPACE>;
       };
       tilde_spc: tilde_spc {
         label = "ZM_tilde_spc";
         compatible = "zmk,behavior-macro";
         #binding-cells = <0>;
-        tap-ms = <30>;
+        wait-ms = <0>;
+        tap-ms = <0>;
         bindings = <&kp TILDE &kp SPACE>;
       };
       caret_spc: caret_spc {
         label = "ZM_caret_spc";
         compatible = "zmk,behavior-macro";
         #binding-cells = <0>;
-        tap-ms = <30>;
+        wait-ms = <0>;
+        tap-ms = <0>;
         bindings = <&kp CARET &kp SPACE>;
       };
+      ae: ae {
+        label = "ZM_ae";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        wait-ms = <0>;
+        tap-ms = <0>;
+        bindings = <&kp DQT &kp a>;
+      }
+      oe: oe {
+        label = "ZM_oe";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        wait-ms = <0>;
+        tap-ms = <0>;
+        bindings = <&kp DQT &kp o>;
+      }
+      ue: ue {
+        label = "ZM_ue";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        wait-ms = <0>;
+        tap-ms = <0>;
+        bindings = <&kp DQT &kp u>;
+      }
     };
 };
     
@@ -85,8 +113,8 @@
 
         umlaut_layer {
             bindings = <
-                &none  &none  &none     &none  &none    &none  &none  &kp RA(P)  &kp RA(Y)  &none
-                &none  &none  &kp RA(S) &none  &none    &none  &none  &kp RA(5)  &none      &kp RA(Q)
+                &none  &none  &none     &none  &none    &none  &none  &oe        &ue        &none
+                &none  &none  &kp RA(S) &none  &none    &none  &none  &none      &none      &ae
                 &none  &none  &none     &none  &none    &none  &none  &none      &none      &none
                                         &none  &none    &none  &none
             >;
