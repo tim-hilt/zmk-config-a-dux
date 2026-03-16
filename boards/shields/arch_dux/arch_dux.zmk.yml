@@ -9,3 +9,4 @@ features:
 siblings:
   - arch_dux_left
   - arch_dux_right
+  - arch_dux_dongle
