@@ -71,13 +71,13 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp BSPC>, <&kp DEL>;
-            mods = <(MOD_LGUI|MOD_LSFT|MOD_LCTL|MOD_LALT)>;
+            mods = <(MOD_LSFT)>;
         };
         under_minus: under_minus {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp UNDER>, <&kp MINUS>;
-            mods = <(MOD_LGUI|MOD_LSFT|MOD_LCTL|MOD_LALT)>;
+            mods = <(MOD_LSFT)>;
         };
 
         hml: hml {
