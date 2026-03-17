@@ -1,11 +1,11 @@
 # Copyright (c) 2021 The ZMK Contributors
 # SPDX-License-Identifier: MIT
 
-config SHIELD_A_DUX_LEFT
+config SHIELD_ARCH_DUX_LEFT
     def_bool $(shields_list_contains,arch_dux_left)
 
-config SHIELD_A_DUX_RIGHT
+config SHIELD_ARCH_DUX_RIGHT
     def_bool $(shields_list_contains,arch_dux_right)
 
-config SHIELD_A_DUX_DONGLE
+config SHIELD_ARCH_DUX_DONGLE
     def_bool $(shields_list_contains,arch_dux_dongle)

@@ -1,4 +1,4 @@
-if SHIELD_A_DUX_DONGLE
+if SHIELD_ARCH_DUX_DONGLE
 
 config ZMK_KEYBOARD_NAME
     default "A. Dux"
@@ -20,7 +20,7 @@ config BT_MAX_PAIRED
 
 endif
 
-if SHIELD_A_DUX_LEFT || SHIELD_A_DUX_RIGHT
+if SHIELD_ARCH_DUX_LEFT || SHIELD_ARCH_DUX_RIGHT
 
 config ZMK_SPLIT
     default y
