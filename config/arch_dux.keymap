@@ -62,6 +62,14 @@
         tap-ms = <0>;
         bindings = <&kp DQT &kp U>;
       };
+      euro: euro {
+        label = "ZM_euro";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        wait-ms = <0>;
+        tap-ms = <0>;
+        bindings = <&kp DQT &kp 5>;
+      };
     };
 };
 
@@ -137,7 +145,7 @@
         umlaut_layer {
             bindings = <
                 &none  &none  &none     &none  &none    &none  &none  &oe        &ue        &none
-                &none  &none  &kp RA(S) &none  &none    &none  &none  &none      &none      &ae
+                &none  &none  &kp RA(S) &none  &none    &none  &none  &euro      &none      &ae
                 &none  &none  &none     &none  &none    &none  &none  &none      &none      &none
                                         &none  &none    &none  &none
             >;
